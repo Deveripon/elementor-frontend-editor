@@ -4,8 +4,18 @@ body {
 
 }
 
+.header-section {
+  .top-nav {
+    display: flex;
+
+  }
+}
+
 .hero-section {
   min-height: 700px;
+  background-image: url("/assets/images/abstract-business-professional-background-banner-design-multipurpose_1340-16856.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
 
   .shadow {
     min-height: 700px;
@@ -49,13 +59,20 @@ body {
   color: $primary_text;
   text-align: center;
   margin: auto;
-  padding: 100px;
+  padding: 100px 50px;
 
+  @media all and(max-width: 768px) {
+    padding: 100px 10px;
+  }
 }
 
 .img-box {
   background-image: url("/assets/images/SL-093020-35920-01.jpg");
   padding: 100px;
+
+  @media all and (max-width:768px) {
+    padding: 100px 20px;
+  }
 
   .box {
     margin: 30px auto;
@@ -88,7 +105,7 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px;
+  padding: 100px auto;
 
   .title {
     color: $accent_text;
@@ -133,7 +150,7 @@ body {
 }
 
 .footer {
-  padding: 50px;
+  padding: 50px auto;
   text-align: right;
 
   color: $accent_text;
