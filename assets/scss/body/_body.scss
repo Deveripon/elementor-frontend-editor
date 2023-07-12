@@ -1,7 +1,9 @@
 body {
   min-height: 100vh;
-  background-color: $main_bg !important;
+}
 
+.elementor-area {
+  background-color: $primary_text;
 }
 
 .header-section {
@@ -67,7 +69,7 @@ body {
 }
 
 .img-box {
-  background-image: url("/assets/images/SL-093020-35920-01.jpg");
+  background-image: url("/assets/images/blue-abstract-background_78370-97.avif");
   padding: 100px;
 
   @media all and (max-width:768px) {
@@ -104,11 +106,12 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px auto;
+
 
   .title {
     color: $accent_text;
     text-align: center;
+    margin-top: 100px !important;
   }
 
   p {
@@ -116,6 +119,7 @@ body {
     max-width: 800px;
     text-align: center;
   }
+
 
   .service-container {
     display: flex;
@@ -150,11 +154,93 @@ body {
 
 .footer {
   padding: 50px auto;
-  text-align: right;
+  text-align: center;
+  background: $main_bg;
 
   color: $accent_text;
 
   a {
     color: $accent_ui_color;
+  }
+}
+
+.elementor-hover-state-active {
+  border: 1px solid $accent_text;
+  border-radius: 5px;
+  position: relative;
+
+  &::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 300;
+    content: "\f044";
+    position: absolute;
+    top: -09px;
+    right: -04px;
+    color: $accent_text;
+    cursor: pointer;
+    font-size: 20px;
+    /* Add styles for the icon */
+  }
+
+
+
+
+
+}
+
+.editor-box {
+  max-width: 460px;
+  height: 100%;
+  border: 1px solid #ccc;
+  background-color: $primary_text;
+  padding: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+
+  label {
+    color: #222;
+    margin-bottom: 3px !important;
+  }
+
+  input,
+  select {
+    margin-bottom: 05px;
+  }
+
+  input[type="range"] {
+    width: 200px;
+    margin-right: 10px;
+
+  }
+
+  input[name="font-size-input"] {
+    width: 90px !important;
+  }
+
+  select,
+  option {
+    width: 300px !important;
+    padding: 10px;
+    border: 1px solid #c2c2;
+    border-radius: 10px;
+  }
+
+  input[type="color"] {
+    height: 50px;
+    width: 50px;
+    display: block;
+  }
+
+  .form-control {
+    margin: 05px auto;
+  }
+
+
+  input[name="margin"] {
+    width: 200px;
+    margin-right: 10px;
+  }
+
+  input[type="text"] {
+    width: 90px !important
   }
 }

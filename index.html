@@ -13,172 +13,276 @@
 </head>
 
 <body>
+  <div class="container-fluid skip-hover">
+    <div class="row skip-hover">
+      <div class="col-3 elementor-area skip-hover">
+        <div class="editor-box skip-hover" id="editor-box">
+          <form action="" class="editor-form skip-hover">
+            <div class="input-group skip-hover">
+              <label style="text-align: left !important;" for="text" class="skip-hover">Text</label>
+              <textarea name="text" id="text" cols="40" rows="2"></textarea>
+            </div>
+            <div class="form-group skip-hover">
+              <label class="skip-hover" for="font-family">Font Family</label>
+              <br>
+              <select class="skip-hover" name="font-family" id="font-family">
+                <option class="skip-hover" value=""> --Default-- </option>
+                <option class="skip-hover" value="Fira Sans">Fira Sans</option>
+                <option class="skip-hover" value="Montserrat">Montserrat</option>
+                <option class="skip-hover" value="Poppins">Poppins</option>
+                <option class="skip-hover" value="Quicksand">Quicksand</option>
+                <option class="skip-hover" value="Quintessential">Quintessential</option>
+                <option class="skip-hover" value="Roboto">Roboto</option>
+                <option class="skip-hover" value="Ubuntu">Ubuntu</option>
+              </select>
+            </div>
+            <div class="form-group skip-hover">
+              <label class="skip-hover" for="font-size">Font Size</label>
+              <div class="font-size-group skip-hover d-flex">
+                <input class="skip-hover" type="range" name="font-size" id="font-size" min="0" max="200" step="1">
+                <input class="skip-hover" type="text" name="font-size-input" id="font-size-input" value="">
+              </div>
+            </div>
+            <div class="form-group skip-hover">
+              <label class="skip-hover" for="font-weight">Font Weight</label>
+              <select class="skip-hover" name="font-weight" id="font-weight">
+                <option class="skip-hover" value="">Normal</option>
+                <option class="skip-hover" value="light">light</option>
+                <option class="skip-hover" value="bold">bold</option>
+                <option class="skip-hover" value="bolder">bolder</option>
+                <option class="skip-hover" value="extra bold">extra bold</option>
+              </select>
+            </div>
+            <div class="form-group skip-hover">
+              <label class="skip-hover" for="font-color">Color</label>
+              <input class="skip-hover" name="color" type="color" id="font-color" value="#30336b">
+            </div>
+            <div class=" skip-hover">
+              <label class="skip-hover" for="alignment">Text Align</label>
+              <!-- <div class="alignment-button-group skip-hover">
+            <i style="border:1px solid #000; border-radius: 5px; margin: 10px; padding: 10px;cursor:pointer;"
+              class="fa-solid skip-hover fa-align-center" id="center""></i>
+            <i 
+              style=" border:1px solid #000; border-radius: 5px; margin: 10px; padding: 10px;cursor:pointer;"
+              class="fa-solid skip-hover fa-align-right" id="right""></i>
+            <i 
+              style=" border:1px solid #000; border-radius: 5px; margin: 10px; padding: 10px;cursor:pointer;"
+              class="fa-solid skip-hover fa-align-left" id="left""></i>
+            <i 
+              style=" border:1px solid #000; border-radius: 5px; margin: 10px; padding: 10px;cursor:pointer;"
+              class="fa-solid skip-hover fa-align-justify" id="justify""></i>
+          </div> -->
 
-  <!-- ========== Header Section Start From Here ========== -->
-  <section class="header-section">
-    <div class="container-fluid">
-      <div class="row top-nav">
-        <div class="col-lg-6 logo-area">
-          <div class="logo">
-            <a href="https://github.com/deveripon">devripon <span>.io</span></a>
-          </div>
-          <div class="toggle-icon">
-            <i class="fa-solid fa-bars menu-toggle-button"></i>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="navigation">
-            <ul class="">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
+              <select class="skip-hover" name="text-align" id="text-align">
+                <option class="skip-hover" value=""> --Default-- </option>
+                <option class="skip-hover" value="center">center</option>
+                <option class="skip-hover" value="left">left</option>
+                <option class="skip-hover" value="right">right</option>
+                <option class="skip-hover" value="justify">justify</option>
+              </select>
+            </div>
+            <div class=" form-control skip-hover">
+              <label class="skip-hover" for="margin">Margin</label>
+              <div class="font-size-group skip-hover d-flex">
+                <input class="skip-hover" type="range" name="margin" id="margin" min="0" max="200" step="1">
+                <input class="skip-hover" type="text" name="margin-input" id="margin-input" value="">
+              </div>
+            </div>
+            <div class="skip-hover form-control">
+              <label class="skip-hover" for="padding">Padding</label>
+              <div class="font-size-group skip-hover d-flex">
+                <input class="skip-hover" type="range" name="padding" id="padding" min="0" max="200" step="1">
+                <input class="skip-hover" type="text" name="padding-input" id="padding-input" value="">
+              </div>
+            </div>
+            <input type="submit" class="btn skip-hover btn-info rounded w-100 mt-2" value="Save">
 
-          </div>
+          </form>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- ========== Section End From Here ========== -->
-  <!-- ========== HeroHeader Section End From Here ========== -->
+      <div class="col-9">
 
-  <div class="hero-section" style=" background-image: url(./assets/images/opoy7.jpg)">
-    <div class=" shadow">
-      <div class="container">
-        <div class="inner-text">
-          <h4>Welcome to dev profile</h4>
-          <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</h6>
-          <button class="btn btn-outline-info">See Work</button>
+        <!-- ========== Header Section Start From Here ========== -->
+        <section class="header-section">
+          <div class="container-fluid">
+            <div class="row top-nav">
+              <div class="col-lg-6 logo-area">
+                <div class="logo ">
+                  <a id="logo-text" href="https://github.com/deveripon">devripon <span
+                      id="logo-extension">.io</span></a>
+                </div>
+                <div class="toggle-icon">
+                  <i class="fa-solid fa-bars menu-toggle-button"></i>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="navigation">
+                  <ul class="">
+                    <li><a class="
+                " href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ========== Section End From Here ========== -->
+        <!-- ========== HeroHeader Section End From Here ========== -->
+
+        <div class="hero-section" style=" background-image: url(./assets/images/opoy7.jpg)">
+          <div class=" shadow">
+            <div class="container">
+              <div class="inner-text">
+                <h4 class="">Welcome to dev profile</h4>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</h6>
+                <button class="btn btn-outline-info">See Work</button>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- ==========  HeroSection end From Here ========== -->
+        <!-- ========== About Section Start From Here ========== -->
+        <section class="about">
+          <h1 class="title">Lorem ipsum dolor sit amet consectetur.</h1>
+          <div class="divider"></div>
+          <p class="desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At eligendi reiciendis in deserunt numquam! Nobis
+            qui
+            fugiat quos similique consectetur, autem ipsum ab sapiente, vitae, harum perspiciatis necessitatibus commodi
+            explicabo Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, provident.
+          </p>
+          <a href="#" class="readmore btn btn-outline-info btn-rounded">Read More</a>
+        </section>
+        <!-- ========== About Section End From Here ========== -->
+        <!-- ========== Image box Start From Here ========== -->
+        <section class="img-box">
+          <div class="row">
+            <div class="box">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, deleniti.</h3>
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptatibus molestiae blanditiis
+                    veniam
+                    veritatis asps corrupti rem. Ipsum itaque officiis laborum omnis explicabo
+                    corporis dolores necessitatibus dous molestiae blanditiis veniam
+                    veritatis asperiores quasi natus quos corrupti rem. Ipsum itaque officiis laborum omnis explicabo
+                    corporis dolores necessitatibus dolore.</p>
+
+                </div>
+                <div class="col-lg-6">
+                  <img src="./assets/images/pexels-michelangelo-buonarroti-8728382 (1).jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="row">
+
+              <div class="col-lg-6">
+                <img src="./assets/images/hero_endframe__dz973mndvu82_large.jpg" alt="">
+              </div>
+              <div class="col-lg-6">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, deleniti.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptatibus molestiae blanditiis veniam
+
+                  veritatis asperiores quasi natus quos corrupti rem. Ipsum itaque officiis ditiis veniam
+                  veritatis asperiores quasi natus quos corrupti rem. Ipsum itaque officiis laborum omnis explicabo
+                  corporis dolores necessitatibus dous molestiae blanditiis veniam
+                  veritatis asperiores quasi natus quos corrupti rem. Ipsum itaque officiis laborum omnis explicabo
+                  corporis dolores necessitatibus dolore.</p>
+
+              </div>
+            </div>
+          </div>
+
+
+        </section>
+        <!-- ========== Image box End From Here ========== -->
+        <!-- ========== Service Section Start From Here ========== -->
+        <section class="service-section" style=" background-image: url(./assets/images/opoy7.jpg)">
+          <div class="container">
+            <div class="row">
+              <h2 class="title">Our Services</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente sint ut rem exercitationem explicabo
+                dicta
+                eius consequuntur quaerat accusantium! Tempora!</p>
+              <div class="service-container">
+                <div class="service-box">
+                  <div class="icon">
+                    <img src="./assets/images/pen_1479590.png" alt="">
+                  </div>
+                  <div class="description">
+                    <h5 class="title">Web Design</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam vero fuga, molestiae soluta
+                      maiores
+                      error non itaque quis distinctio repellendus?</p>
+                  </div>
+                </div>
+                <div class="service-box">
+                  <div class="icon">
+                    <img src="./assets/images/graphic-design.png" alt="">
+                  </div>
+                  <div class="description">
+                    <h5 class="title">Web Development</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam vero fuga, molestiae soluta
+                      maiores
+                      error non itaque quis distinctio repellendus?</p>
+                  </div>
+                </div>
+                <div class="service-box">
+                  <div class="icon">
+                    <img src="./assets/images/ux.png" alt="">
+                  </div>
+                  <div class="description">
+                    <h5 class="title">Deployment</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam vero fuga, molestiae soluta
+                      maiores
+                      error non itaque quis distinctio repellendus?</p>
+                  </div>
+                </div>
+                <div class="service-box">
+                  <div class="icon">
+                    <img src="./assets/images/add-folder.png" alt="">
+                  </div>
+                  <div class="description">
+                    <h5 class="title">SEO</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam vero fuga, molestiae soluta
+                      maiores
+                      error non itaque quis distinctio repellendus?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ========== Service Section End From Here ========== -->
+        <!-- ========== Section Start From Here ========== -->
+        <section class="footer">
+          <div class="container">
+            <div class="copywrite">
+              <p>design and developed by <a href="https://github.com/deveripon">devripon</a></p>
+            </div>
+          </div>
+        </section>
+
+
+
       </div>
     </div>
   </div>
-
-  <!-- ==========  HeroSection end From Here ========== -->
-  <!-- ========== About Section Start From Here ========== -->
-  <section class="about">
-    <h1 class="title">Lorem ipsum dolor sit amet consectetur.</h1>
-    <div class="divider"></div>
-    <p class="desc">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. At eligendi reiciendis in deserunt numquam! Nobis qui
-      fugiat quos similique consectetur, autem ipsum ab sapiente, vitae, harum perspiciatis necessitatibus commodi
-      explicabo Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, provident.
-    </p>
-    <a href="#" class="readmore btn btn-outline-info btn-rounded">Read More</a>
-  </section>
-  <!-- ========== About Section End From Here ========== -->
-  <!-- ========== Image box Start From Here ========== -->
-  <section class="img-box">
-    <div class="row">
-      <div class="box">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, deleniti.</h3>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptatibus molestiae blanditiis veniam
-              veritatis asps corrupti rem. Ipsum itaque officiis laborum omnis explicabo
-              corporis dolores necessitatibus dous molestiae blanditiis veniam
-              veritatis asperiores quasi natus quos corrupti rem. Ipsum itaque officiis laborum omnis explicabo
-              corporis dolores necessitatibus dolore.</p>
-
-          </div>
-          <div class="col-lg-6">
-            <img src="./assets/images/pexels-michelangelo-buonarroti-8728382 (1).jpg" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="box">
-      <div class="row">
-
-        <div class="col-lg-6">
-          <img src="./assets/images/hero_endframe__dz973mndvu82_large.jpg" alt="">
-        </div>
-        <div class="col-lg-6">
-          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, deleniti.</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptatibus molestiae blanditiis veniam
-
-            veritatis asperiores quasi natus quos corrupti rem. Ipsum itaque officiis ditiis veniam
-            veritatis asperiores quasi natus quos corrupti rem. Ipsum itaque officiis laborum omnis explicabo
-            corporis dolores necessitatibus dous molestiae blanditiis veniam
-            veritatis asperiores quasi natus quos corrupti rem. Ipsum itaque officiis laborum omnis explicabo
-            corporis dolores necessitatibus dolore.</p>
-
-        </div>
-      </div>
-    </div>
-    </div>
-
-  </section>
-  <!-- ========== Image box End From Here ========== -->
-  <!-- ========== Service Section Start From Here ========== -->
-  <section class="service-section" style=" background-image: url(./assets/images/opoy7.jpg)">
-    <div class="container">
-      <div class="row">
-        <h2 class="title">Our Services</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente sint ut rem exercitationem explicabo dicta
-          eius consequuntur quaerat accusantium! Tempora!</p>
-        <div class="service-container">
-          <div class="service-box">
-            <div class="icon">
-              <img src="./assets/images/pen_1479590.png" alt="">
-            </div>
-            <div class="description">
-              <h5 class="title">Web Design</h5>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam vero fuga, molestiae soluta maiores
-                error non itaque quis distinctio repellendus?</p>
-            </div>
-          </div>
-          <div class="service-box">
-            <div class="icon">
-              <img src="./assets/images/graphic-design.png" alt="">
-            </div>
-            <div class="description">
-              <h5 class="title">Web Development</h5>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam vero fuga, molestiae soluta maiores
-                error non itaque quis distinctio repellendus?</p>
-            </div>
-          </div>
-          <div class="service-box">
-            <div class="icon">
-              <img src="./assets/images/ux.png" alt="">
-            </div>
-            <div class="description">
-              <h5 class="title">Deployment</h5>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam vero fuga, molestiae soluta maiores
-                error non itaque quis distinctio repellendus?</p>
-            </div>
-          </div>
-          <div class="service-box">
-            <div class="icon">
-              <img src="./assets/images/add-folder.png" alt="">
-            </div>
-            <div class="description">
-              <h5 class="title">SEO</h5>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam vero fuga, molestiae soluta maiores
-                error non itaque quis distinctio repellendus?</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ========== Service Section End From Here ========== -->
-  <!-- ========== Section Start From Here ========== -->
-  <section class="footer">
-    <div class="container">
-      <div class="copywrite">
-        <p>design and developed by <a href="https://github.com/deveripon">devripon</a></p>
-      </div>
-    </div>
-  </section>
+  </div>
   <!-- ========== Section End From Here ========== -->
 
   <!-- bootstrap cdn js files -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
   </script>
   <!-- Font Awsome Js -->
