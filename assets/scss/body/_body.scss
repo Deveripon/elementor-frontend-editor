@@ -1,0 +1,144 @@
+body {
+  min-height: 100vh;
+  background-color: $main_bg !important;
+
+}
+
+.hero-section {
+  min-height: 700px;
+
+  .shadow {
+    min-height: 700px;
+    background-color: rgba(0, 0, 0, 0.219);
+
+    .inner-text {
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+
+      h4 {
+        color: $primary_text;
+        font-size: 45px;
+        margin-top: 100px;
+        text-align: center;
+
+      }
+
+      h6 {
+        color: $accent_text;
+        font-size: 40px;
+        max-width: 800px;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 30px;
+      }
+
+      button {
+        color: $primary_text;
+
+      }
+    }
+  }
+}
+
+.about {
+  background-color: $main_bg;
+  color: $primary_text;
+  text-align: center;
+  margin: auto;
+  padding: 100px;
+
+}
+
+.img-box {
+  background-image: url("/assets/images/SL-093020-35920-01.jpg");
+  padding: 100px;
+
+  .box {
+    margin: 30px auto;
+
+    img {
+      width: 100%;
+      max-height: 700px;
+      object-fit: cover;
+      object-position: top;
+      margin: 30px auto;
+
+    }
+
+    h3 {
+      color: $secondary_text;
+    }
+
+    p {
+      color: $accent_text;
+      font-size: 20px;
+
+    }
+  }
+
+
+}
+
+.service-section {
+  background-image: url(/assets/images/abstract-business-professional-background-banner-design-multipurpose_1340-16856.avif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+
+  .title {
+    color: $accent_text;
+    text-align: center;
+  }
+
+  p {
+    color: $secondary_text;
+    max-width: 800px;
+    text-align: center;
+  }
+
+  .service-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+
+    .service-box {
+      border: 1px solid $accent_text;
+      margin: 10px;
+      padding: 30px;
+      border-radius: 10px;
+      min-width: 300px;
+      max-width: 400px;
+
+      @media all and (max-width:992px) {
+        max-width: 500px;
+      }
+
+      img {
+        max-width: 100px;
+        display: block;
+        margin-bottom: 30px;
+
+      }
+
+    }
+
+  }
+
+}
+
+.footer {
+  padding: 50px;
+  text-align: right;
+
+  color: $accent_text;
+
+  a {
+    color: $accent_ui_color;
+  }
+}

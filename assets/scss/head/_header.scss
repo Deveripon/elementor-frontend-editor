@@ -1,0 +1,108 @@
+.header-section {
+  background-color: $main_bg;
+  padding: 20px 0px;
+
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo-area {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+      a {
+        color: $primary_text;
+        font-weight: 900;
+        font-size: 45px;
+        text-decoration: none;
+
+        @media all and (max-width:768px) {
+          font-size: 35px;
+        }
+
+        @media all and (max-width:458px) {
+          font-size: 25px;
+        }
+
+        span {
+          color: $accent_text;
+          font-weight: 900;
+          font-family: $font-ubuntu;
+          font-size: 45px;
+
+          @media all and (max-width:768px) {
+            font-size: 35px;
+          }
+
+          @media all and (max-width:458px) {
+            font-size: 25px;
+          }
+        }
+      }
+
+    }
+
+    i {
+      color: $primary_text;
+      border: 1px solid $primary_text;
+      padding: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      float: right;
+      display: none;
+      transition: 0.2s;
+
+      @media all and(max-width: 992px) {
+        display: block;
+
+      }
+
+    }
+
+  }
+
+  .navigation {
+    padding: 20px 0px;
+
+    @media all and (max-width:458px) {
+      padding: 10px;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+
+      @media all and(min-width: 992px) {
+        flex-direction: row;
+      }
+
+      @media all and(max-width: 992px) {
+        display: none;
+      }
+
+      li {
+        margin: 10px auto;
+
+        a {
+          color: $primary_text;
+          transition: .3s;
+          ;
+          font-weight: 500;
+
+          &:hover {
+            color: $accent_text;
+          }
+        }
+      }
+    }
+
+    ul.active {
+      display: flex !important;
+      flex-direction: column;
+    }
+
+
+  }
+}

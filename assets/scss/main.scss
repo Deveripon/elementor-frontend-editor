@@ -1,0 +1,15 @@
+//import colors
+@import "./color";
+@import "./reset";
+@import"./typography";
+
+
+//import partials
+@import "./head/header";
+@import "./body/body";
+@import "./footer/footer";
+
+
+* {
+  margin: auto;
+}
