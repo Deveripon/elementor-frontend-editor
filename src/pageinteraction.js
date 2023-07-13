@@ -26,7 +26,6 @@ const marginInput = editorBox.querySelector("input[name ='margin-input']");
 const marginUnit = editorBox.querySelector("select[name ='margin-unit']");
 const padding = editorBox.querySelector("input[name ='padding']");
 const paddingInput = editorBox.querySelector("input[name ='padding-input']");
-const paddingUnit = editorBox.querySelector("select[name ='padding-unit']");
 
 //get all html component
 const logoText = document.getElementById("logo-text");
@@ -169,6 +168,14 @@ function elementorEdit(element) {
         element.style.margin = paddingInput.value + paddingUnit.value;
       }
     });
+    editorBox.addEventListener(
+      ("submit",
+      function (e) {
+        e.preventDefault();
+        sendData(textFieldValue, element.getAttribute("id"));
+        textFiled.value = "";
+      })
+    );
   });
 }
 document.addEventListener("mouseout", function (e) {
